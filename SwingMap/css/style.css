@@ -9,30 +9,38 @@ html, body, #map {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: calc(40% - 30px);
-	max-width: 300px;
-	height: calc(100% - 30px);
+	width: calc(40% - 2em);
+	max-width: 20em;
+	height: calc(100% - 2em);
 	max-height: none;
 	background-color: rgba(255,255,255,0.75);
-	padding: 15px;
+	padding: 1em;
 	overflow: auto;
 }
 #sidebar h2 {
 	font-family: 'Wire One', sans-serif;
-	font-size: 48px;
+	font-size: 4rem;
 	text-align: center;
 }
 #sidebar p {
 	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+#footer {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	right: 1em;
+	text-align: center;
+
 }
 
 @media screen and (max-width: 700px) and (min-height: 350px) {
 	#sidebar {
 		top: auto;
 		bottom: 0;
-		width: calc(100% - 30px);
+		width: calc(100% - 2em);
 		max-width: none;
-		height: calc(40% - 30px);
-		max-height: 250px;
+		height: calc(40% - 2em);
+		max-height: 17em;
 	}
 }
