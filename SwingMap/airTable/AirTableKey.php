@@ -7,5 +7,5 @@
  */
 
 function getAuthKey() {
-    return "<YOUR KEY HERE>";
+    return "keynTRAOtbgv5mzpn";
 }
