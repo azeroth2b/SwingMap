@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,6 +26,21 @@
 	<div id="sidebar">
 		<h2>Swing Map</h2>
 		<p>Explore scenes and events by clicking on map markers!</p>
+		<div id="test">
+			<p>Test AirTable Connection:</p>
+			<?php
+				include("airTable/AirTable.php");
+				$AT = new AirTable();
+				$scenes = $AT->getScenes();
+				foreach ($scenes["records"] as $s) {
+					echo $s['id'] .": ";
+					echo (isset($s['fields']['Name']) ? $s['fields']['Name'] : "EmptyRow");
+					echo "<br/>";
+				}
+				// var_dump($scenes);
+
+			?>
+		</div>
 		<div id="footer">
 			[ Add your scene | About Us ]
 		</div>
