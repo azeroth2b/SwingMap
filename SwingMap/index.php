@@ -32,10 +32,8 @@ ini_set('display_errors', 1);
 				include("airTable/AirTable.php");
 				$AT = new AirTable();
 				$scenes = $AT->getScenes();
-				foreach ($scenes["records"] as $s) {
-					echo $s['id'] .": ";
-					echo (isset($s['fields']['Name']) ? $s['fields']['Name'] : "EmptyRow");
-					echo "<br/>";
+				foreach ($scenes['records'] as $s) {
+					echo $s['fields']['Name'] . "<br/>";
 				}
 				// var_dump($scenes);
 

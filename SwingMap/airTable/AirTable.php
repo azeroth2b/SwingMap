@@ -31,7 +31,7 @@ class AirTable
 
     function getScenes(){
         $ch = $this->InitMessage();
-        curl_setopt($ch, CURLOPT_URL, $this->_baseUrl . "Scenes");
+        curl_setopt($ch, CURLOPT_URL, $this->_baseUrl . "Scenes?maxRecords=1000&view=Web");
         echo $this->_baseUrl . "Scenes.<br/>";
         curl_setopt($ch, CURLOPT_POST, false);
         $o = curl_exec($ch);
