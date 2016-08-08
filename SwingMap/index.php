@@ -29,13 +29,18 @@ ini_set('display_errors', 1);
 		<div id="test">
 			<p>Test AirTable Connection:</p>
 			<?php
-				include("airTable/AirTable.php");
-				$AT = new AirTable();
-				$scenes = $AT->getScenes();
-				foreach ($scenes['records'] as $s) {
-					echo $s['fields']['Name'] . "<br/>";
-				}
-				// var_dump($scenes);
+			include("airTable/AirTable.php");
+			$scenes = array();
+
+			$AT = new AirTable();
+			$scenes = $AT->getAllScenes();
+
+			$r = 1;
+			foreach ($scenes as $scene) {
+				echo $r++ . ": ";
+				echo $scene['fields']['Name'] . "<br/>";
+			}
+			// var_dump($scenes);
 
 			?>
 		</div>

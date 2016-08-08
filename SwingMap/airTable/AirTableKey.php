@@ -9,3 +9,7 @@
 function getAuthKey() {
     return "keynTRAOtbgv5mzpn";
 }
+
+function getAppKey() {
+    return "appJEZiHXN7M2csbj";
+}
