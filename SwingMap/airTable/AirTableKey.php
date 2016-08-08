@@ -11,5 +11,5 @@ function getAuthKey() {
 }
 
 function getAppKey() {
-    return "<Your API Key Here>";
+    return "<Your APP API Key Here>";
 }
