@@ -7,9 +7,9 @@
  */
 
 function getAuthKey() {
-    return "keynTRAOtbgv5mzpn";
+    return "<Your Authorization Key Here>";
 }
 
 function getAppKey() {
-    return "appJEZiHXN7M2csbj";
+    return "<Your API Key Here>";
 }
